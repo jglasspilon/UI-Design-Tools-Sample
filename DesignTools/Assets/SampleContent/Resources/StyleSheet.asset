@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe67168e7cbb94b489e641b0ee579312, type: 3}
+  m_Name: StyleSheet
+  m_EditorClassIdentifier: Assembly-CSharp::StyleSheet
+  m_clientColor: {r: 0, g: 0.46666667, b: 0.56078434, a: 1}
+  m_clientColorModifiers:
+  - Key: 1
+    Value: {r: 0.9529412, g: 0.95686275, b: 0.96862745, a: 0.9019608}
+  - Key: 2
+    Value: {r: 0.8862745, g: 0.8980392, b: 0.9137255, a: 0.87058824}
+  - Key: 3
+    Value: {r: 0.8862745, g: 0.8980392, b: 0.9137255, a: 0.7490196}
+  - Key: 4
+    Value: {r: 0.8862745, g: 0.8980392, b: 0.9137255, a: 0.54901963}
+  - Key: 5
+    Value: {r: 0.11372549, g: 0.11764706, b: 0.1254902, a: 0.4509804}
+  - Key: 6
+    Value: {r: 0.11372549, g: 0.11764706, b: 0.1254902, a: 0.8}
+  - Key: 7
+    Value: {r: 0.11372549, g: 0.11764706, b: 0.1254902, a: 0.9490196}
+  m_contentColors: []
+  m_interfaceColors:
+  - Key: 0
+    Value: {r: 0.9529412, g: 0.95686275, b: 0.96862745, a: 1}
+  - Key: 1
+    Value: {r: 0.92156863, g: 0.92941177, b: 0.9411765, a: 1}
+  - Key: 2
+    Value: {r: 0.8862745, g: 0.8980392, b: 0.9137255, a: 1}
+  - Key: 3
+    Value: {r: 0.8509804, g: 0.8666667, b: 0.8862745, a: 1}
+  - Key: 4
+    Value: {r: 0.81960785, g: 0.8352941, b: 0.85882354, a: 1}
+  - Key: 5
+    Value: {r: 0.75686276, g: 0.77254903, b: 0.8, a: 1}
+  - Key: 6
+    Value: {r: 0.69803923, g: 0.7137255, b: 0.7411765, a: 1}
+  - Key: 7
+    Value: {r: 0.6509804, g: 0.6666667, b: 0.6901961, a: 1}
+  - Key: 8
+    Value: {r: 0.6, g: 0.6156863, b: 0.6392157, a: 1}
+  - Key: 9
+    Value: {r: 0.54509807, g: 0.56078434, b: 0.58431375, a: 1}
+  - Key: 10
+    Value: {r: 0.49019608, g: 0.5058824, b: 0.5294118, a: 1}
+  - Key: 11
+    Value: {r: 0.43529412, g: 0.4509804, b: 0.4745098, a: 1}
+  - Key: 12
+    Value: {r: 0.38431373, g: 0.39607844, b: 0.41568628, a: 1}
+  - Key: 13
+    Value: {r: 0.34509805, g: 0.35686275, b: 0.37254903, a: 1}
+  - Key: 14
+    Value: {r: 0.30588236, g: 0.31764707, b: 0.33333334, a: 1}
+  - Key: 15
+    Value: {r: 0.2509804, g: 0.25882354, b: 0.27058825, a: 1}
+  - Key: 16
+    Value: {r: 0.19215687, g: 0.2, b: 0.20784314, a: 1}
+  - Key: 17
+    Value: {r: 0.11372549, g: 0.11764706, b: 0.1254902, a: 1}
+  - Key: 18
+    Value: {r: 0.03529412, g: 0.039215688, b: 0.047058824, a: 1}
+  m_fontSettings:
+  - Name: H1-Black
+    FontAsset: {fileID: 11400000, guid: 6076f32b0ac6f2943a42db568337d2d1, type: 2}
+    FontSize: 168
+    LineHeight: -40
+  - Name: H1-ExtraBold
+    FontAsset: {fileID: 11400000, guid: b75441e38d8d3e94eae85af9ef5b9ad5, type: 2}
+    FontSize: 168
+    LineHeight: -40
+  - Name: H1-Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 168
+    LineHeight: -40
+  - Name: H2-ExtraBold
+    FontAsset: {fileID: 11400000, guid: b75441e38d8d3e94eae85af9ef5b9ad5, type: 2}
+    FontSize: 144
+    LineHeight: -36
+  - Name: H2-Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 144
+    LineHeight: -36
+  - Name: H3-ExtraBold
+    FontAsset: {fileID: 11400000, guid: b75441e38d8d3e94eae85af9ef5b9ad5, type: 2}
+    FontSize: 120
+    LineHeight: -34
+  - Name: H3-Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 120
+    LineHeight: -34
+  - Name: H4-ExtraBold
+    FontAsset: {fileID: 11400000, guid: b75441e38d8d3e94eae85af9ef5b9ad5, type: 2}
+    FontSize: 96
+    LineHeight: -32
+  - Name: H4-Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 96
+    LineHeight: -32
+  - Name: H5-Black
+    FontAsset: {fileID: 11400000, guid: 6076f32b0ac6f2943a42db568337d2d1, type: 2}
+    FontSize: 88
+    LineHeight: -30
+  - Name: H5-Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 88
+    LineHeight: -30
+  - Name: H5-Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 88
+    LineHeight: -30
+  - Name: H6-Black
+    FontAsset: {fileID: 11400000, guid: 6076f32b0ac6f2943a42db568337d2d1, type: 2}
+    FontSize: 80
+    LineHeight: -30
+  - Name: H6-Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 80
+    LineHeight: -30
+  - Name: H6-Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 80
+    LineHeight: -30
+  - Name: 3X-Large Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 64
+    LineHeight: -27
+  - Name: 3X-Large Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 64
+    LineHeight: -27
+  - Name: 3X-Large XBold
+    FontAsset: {fileID: 11400000, guid: b75441e38d8d3e94eae85af9ef5b9ad5, type: 2}
+    FontSize: 64
+    LineHeight: -27
+  - Name: 2X-Large Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 56
+    LineHeight: -25
+  - Name: 2X-Large XBold
+    FontAsset: {fileID: 11400000, guid: b75441e38d8d3e94eae85af9ef5b9ad5, type: 2}
+    FontSize: 56
+    LineHeight: -27
+  - Name: 2X-Large Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 56
+    LineHeight: -25
+  - Name: X-Large Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 48
+    LineHeight: -23
+  - Name: X-Large Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 48
+    LineHeight: -24
+  - Name: X-Large XBold
+    FontAsset: {fileID: 11400000, guid: b75441e38d8d3e94eae85af9ef5b9ad5, type: 2}
+    FontSize: 48
+    LineHeight: -24
+  - Name: Large Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 36
+    LineHeight: -12
+  - Name: Large Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 36
+    LineHeight: -12
+  - Name: Normal Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 28
+    LineHeight: -12
+  - Name: Normal Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 28
+    LineHeight: -12
+  - Name: Small Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 24
+    LineHeight: -3
+  - Name: Small Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 24
+    LineHeight: -9
+  - Name: X-Small 19 Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 19
+    LineHeight: -12
+  - Name: X-Small 19 Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 19
+    LineHeight: -9
+  - Name: X-Small 18 Med
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 18
+    LineHeight: 0
+  - Name: X-Small 18 Bold
+    FontAsset: {fileID: 11400000, guid: 2f3c02f72ab3fc14897464d5f39a9d7f, type: 2}
+    FontSize: 18
+    LineHeight: -12
+  - Name: XX-Small
+    FontAsset: {fileID: 11400000, guid: 5bb544c5dfb99ad4ab8b3a85152fa68d, type: 2}
+    FontSize: 12
+    LineHeight: -3
