@@ -16,14 +16,14 @@ public class ContrastRatioCalculator : MonoBehaviour
     private Color m_darkColor = new Color(0.1137f, 0.1176f, 0.1254f);
 
     [SerializeField]
+    private ContrastCalculateInvoker[] m_invokers;
+
+    [SerializeField]
     [Range(1f, 20f)]
     private float m_acceptableThreshold = 4.5f;
 
     [SerializeField]
-    private bool m_inverse, m_debug;
-
-    [Header("Events Which Trigger Calculate")][SerializeField]
-    private UnityEvent m_CalculateOn;
+    private bool m_inverse, m_debug;  
 
     private MaskableGraphic m_objectToSetColor;
 
@@ -34,16 +34,25 @@ public class ContrastRatioCalculator : MonoBehaviour
 
     private void OnEnable()
     {
-        if (m_lightColor != null)
-            m_CalculateOn.AddListener(Calculate);
-
+        if(m_invokers != null)
+        {
+            foreach(ContrastCalculateInvoker invoker in m_invokers)
+            {
+                invoker.OnCalculate += Calculate;
+            }
+        }
         Calculate();
     }
 
     private void OnDisable()
     {
-        if (m_lightColor != null)
-            m_CalculateOn.RemoveListener(Calculate);
+        if (m_invokers != null)
+        {
+            foreach (ContrastCalculateInvoker invoker in m_invokers)
+            {
+                invoker.OnCalculate -= Calculate;
+            }
+        }
     }
 
     public void Calculate()
