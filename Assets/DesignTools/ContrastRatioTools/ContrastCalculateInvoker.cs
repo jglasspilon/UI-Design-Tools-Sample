@@ -5,7 +5,7 @@ public class ContrastCalculateInvoker: MonoBehaviour
 {
     public event Action OnCalculate;
 
-    public virtual void RecaculateContrastRatios()
+    protected virtual void RecaculateContrastRatios()
     {
         OnCalculate?.Invoke();
     }

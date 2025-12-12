@@ -8,6 +8,9 @@ public class HorizontalLoop : MonoBehaviour
     [SerializeField]
     private float m_itemWidth, m_spacing, m_viewportWidth;
 
+    [SerializeField]
+    private bool m_runInUpdate;
+
     private int m_itemCount;
     private float m_totalSpan, m_viewportSpanWithBuffer;
 
@@ -16,6 +19,12 @@ public class HorizontalLoop : MonoBehaviour
         m_itemCount = m_content.childCount;
         m_totalSpan = m_itemCount * (m_itemWidth + m_spacing);
         m_viewportSpanWithBuffer = m_viewportWidth + m_itemWidth + m_spacing;
+    }
+
+    private void Update()
+    {
+        if (m_runInUpdate)
+            UpdateLoop();
     }
 
     public void UpdateLoop()
