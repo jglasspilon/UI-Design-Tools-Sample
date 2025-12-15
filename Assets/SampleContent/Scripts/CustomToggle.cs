@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Unity.VisualScripting;
 
 [RequireComponent(typeof(Button))]
 public class CustomToggle : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
@@ -66,18 +67,20 @@ public class CustomToggle : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        Toggle();
-
         if (m_transitionAnim == null || (m_isOn && !m_toggleGroup.CanTurnOffToggles))
             return;
 
+        Toggle();
         string stateTrigger = m_isOn ? m_selectedTrigger : m_normalTrigger;
         m_transitionAnim.SetTrigger(stateTrigger);
     }
 
     public void Toggle()
     {
-        if (m_isOn && m_toggleGroup.CanTurnOffToggles)
+        if (m_isOn && m_toggleGroup != null && !m_toggleGroup.CanTurnOffToggles)
+            return;
+
+        if (m_isOn)
             TurnOff();
         else
             TurnOn();
