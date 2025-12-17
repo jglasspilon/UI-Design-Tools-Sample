@@ -1,6 +1,6 @@
 # Case Study: Design & Integration Tools
 
-Collaborated closely with UI and UX designers to design and develop tools that they required to improve the creative and integration team's productivity and ability to match figma and photoshop designs.
+Collaborated closely with artists and UX designers to design and develop tools to improve the creative and integration team's productivity and ability to match figma and photoshop designs within the engine.
 
 ---
 
