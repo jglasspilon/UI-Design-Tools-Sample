@@ -83,7 +83,7 @@ Collaborated closely with UI and UX designers to design and develop tools that t
 </details>
 
 <details>
-  <summary><strong>"Image Blend</strong></summary>
+  <summary><strong>Image Blend</strong></summary>
   
   <blockquote>
   <h2>Responsibilities</h2>
@@ -124,7 +124,7 @@ Collaborated closely with UI and UX designers to design and develop tools that t
 </details>
 
 <details>
-  <summary><strong>"Contrast Ratio Calculator</strong></summary>
+  <summary><strong>Contrast Ratio Calculator</strong></summary>
   
   <blockquote>
   <h2>Responsibilities</h2>
