@@ -20,11 +20,11 @@ Collaborated closely with UI and UX designers to design and develop tools that t
   <blockquote>
   <h2>Responsibilities</h2>
   <ul>
-    <li>Designed the code architecture for the system</li>
-    <li>Determined and prioritized needed components with mentality towards easy scaling</li>
+    <li>Designed the code architecture for a component-based Data Binder system with a "No-code" requirement during implementation</li>
+    <li>Determined and prioritized needed components with focus towards easy scaling</li>
     <li>Built modular, data-binder components</li>
-    <li>Built a single point of entry component for easy one-line consumer implementation</li>
-    <li>Built a single point of entry component for generating data binder prefabs from JSON array data</li>
+    <li>Built a single point of entry component for binding multiple data binder components to a single JSON payload. Requires one function call by the consumer upon implementation.</li>
+    <li>Built a single point of entry component for generating data binder prefabs from JSON array data. Requires one function call by the consumer upon implementation.</li>
   </ul>
 
   <hr>
@@ -42,19 +42,7 @@ Collaborated closely with UI and UX designers to design and develop tools that t
 
   <h2>Solution</h2>
   <p>
-    Take an MVVM (Model-View-ViewModel) approach and create reusable components that can specify what field from a JSON payload
-    to use and how to bind that data to various UGUI components.
-  </p>
-  <p>
-    Each of these binder components would then be attached to a parent Data Binder that would feed them the JSON data
-    provided by the graphic class.
-  </p>
-  <p>
-    In this way, the graphic class only has knowledge of the parent binder to allow for the transfer of data.
-  </p>
-  <p>
-    This approach abstracts out all of the graphical binding logic from the graphic class and allows for very quick
-    modifications with zero code manipulation once implemented.
+    Use an MVVM (Model-View-ViewModel) approach with reusable components that define which JSON fields to bind to UGUI elements. These binders connect to a parent Data Binder, which supplies JSON data from the graphic class. The graphic class interacts only with the parent binder, keeping binding logic abstracted and enabling rapid, code-free modifications once implemented.
   </p>
 
   <hr>
@@ -96,7 +84,7 @@ Collaborated closely with UI and UX designers to design and develop tools that t
 
   <h2>Challenge</h2>
   <p>
-    When trying to reproduce the design created from external tools such as figma and photoshop, we are often limited by the feature differences between the creative tool and Unity. In this case, Unity does not support the standard blend modes offered in industry standard creative tools that allow the designer to blend two images together. Sometimes we can pull the final blended image directly from the design but sometimes a more dynamic layering is needed within the engine. This can lead to a descrepency between the design and the in engine output.
+    Reproducing designs from tools like Figma or Photoshop can be limited by Unity’s lack of standard blend modes. While final blended images can sometimes be imported directly, dynamic layering often requires in‑engine work, leading to discrepancies between the original design and Unity’s output.
   </p>
 
   <hr>
