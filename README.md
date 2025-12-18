@@ -189,7 +189,7 @@ Simply download this build and you can see the various tools in action.<br>
 
 ---
 
-# Visual Examples (At a Glance)
+# Visual Examples
 ### Data Binder Sample In-Action
 
 ---
