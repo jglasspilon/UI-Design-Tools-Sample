@@ -22,9 +22,9 @@ Collaborated closely with artists and UX designers to design and develop tools t
   <ul>
     <li>Designed the code architecture for a component-based Data Binder system with a "No-code" requirement during implementation</li>
     <li>Determined and prioritized needed components with focus towards easy scaling</li>
-    <li>Built modular, data-binder components</li>
-    <li>Built a single point of entry component for binding multiple data binder components to a single JSON payload. Requires one function call by the consumer upon implementation.</li>
-    <li>Built a single point of entry component for generating data binder prefabs from JSON array data. Requires one function call by the consumer upon implementation.</li>
+    <li>Built modular, data-binder components for various unity UGUI components</li>
+    <li>Built a single point of entry component for binding multiple data binder components to a single JSON payload requiring a single function call by the consumer upon implementation.</li>
+    <li>Built a single point of entry component for generating data binder prefabs from JSON array data requiring a single function call by the consumer upon implementation.</li>
   </ul>
 
   <hr>
