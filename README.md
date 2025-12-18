@@ -63,7 +63,7 @@ Collaborated closely with artists and UX designers to design and develop tools t
 </details>
 
 <details>
-  <summary><strong>Image Blend Component & Shader</strong><br>Summary</summary>
+  <summary><strong>"Image Blend Component & Shader"</strong><br>A custom Unity Image component and HLSL shader that brings standard creative-tool blend modes into UGUI, allowing designers to implement complex, dynamic image blending without visual compromises.</summary>
   
   <blockquote>
   <h2>Responsibilities</h2>
@@ -94,16 +94,21 @@ Collaborated closely with artists and UX designers to design and develop tools t
   </p>
   <ul>
     <li><strong>Before ➙</strong> design compromises were not uncommon when faced with dynamic blending scenarios, which reduced the designers creative freedom.</li>
-    <li><strong>After ➙</strong> designer no longer needed to compromise his vision when working with dynamically blended content</li>
+    <li><strong>After ➙</strong> designers no longer needed to compromise their vision when working with dynamically blended content</li>
   </ul>
   
   <hr>
 
   <h2>Key Learnings</h2>
   <ul>
-    <li>Creative compromises are often unavoidable in any development environment, but if a tool, component or system can be created to remove creative frictions, the final product and productivity towards it will always benefit. </li>
-    <li>This also helps improve the relationship between creatives and their technical counterparts, leading to better dynamics and more productive cross disciplinary teams.</li>
-    <li><strong>Happy designer = happy developer.</strong></li>
+    <li>Removing creative friction through targeted technical solutions improves both product quality and cross-disciplinary collaboration.
+    </li>
+    <li>
+      Aligning engine capabilities with creative tools strengthens trust between designers and engineers.
+    </li>
+    <li>
+      <strong>Happy designer = happy developer.</strong>
+    </li>
   </ul>
 
   </blockquote>
