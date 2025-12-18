@@ -191,7 +191,7 @@ Simply download this build and you can see the various tools in action.<br>
 
 # Visual Examples
 ### Data Binder Sample In-Action
-
+![Data-Binders Demo](Media/DataBinders.gif)
 ---
 
 ### Blending Images Inside Unity
@@ -199,5 +199,5 @@ Simply download this build and you can see the various tools in action.<br>
 ---
 
 ### Consistent Readable Text Regardless of Background Color
-
+![Data-Binders Demo](Media/ContrastRatio.gif)
 
