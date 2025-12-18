@@ -71,7 +71,7 @@ Collaborated closely with artists and UX designers to design and develop tools t
 </details>
 
 <details>
-  <summary><strong>Image Blend Component</strong></summary>
+  <summary><strong>Image Blend Component & Shader</strong></summary>
   
   <blockquote>
   <h2>Responsibilities</h2>
@@ -112,7 +112,7 @@ Collaborated closely with artists and UX designers to design and develop tools t
 </details>
 
 <details>
-  <summary><strong>Contrast Ratio Calculator Component</strong></summary>
+  <summary><strong>Event-Driven Contrast Ratio Calculator Component</strong></summary>
   
   <blockquote>
   <h2>Responsibilities</h2>
