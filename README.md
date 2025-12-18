@@ -194,7 +194,7 @@ Simply download this build and you can see the various tools in action.<br>
 
 ---
 
-### Blending Images 
+### Blending Images Inside Unity
 
 ---
 
