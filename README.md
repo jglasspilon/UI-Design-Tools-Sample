@@ -195,7 +195,7 @@ Simply download this build and you can see the various tools in action.<br>
 ---
 
 ### Blending Images Inside Unity
-
+![Data-Binders Demo](Media/ImageBlend.gif)
 ---
 
 ### Consistent Readable Text Regardless of Background Color
