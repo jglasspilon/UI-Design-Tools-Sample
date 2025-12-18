@@ -72,21 +72,15 @@ Collaborated closely with artists and UX designers to design and develop tools t
     <li>Created a custom HLSL UI shader that supports the various image blend modes and maintains all basic image material functionality.</li>
   </ul>
 
-  <hr>
-
   <h2>Challenge</h2>
   <p>
     Reproducing designs from tools like Figma or Photoshop can be limited by Unity’s lack of standard blend modes. While final blended images can sometimes be imported directly, dynamic layering often requires in‑engine work, leading to discrepancies between the original design and Unity’s output.
   </p>
 
-  <hr>
-
   <h2>Solution</h2>
   <p>
     Extend the already provided Unity UGUI Image component to offer one that supports the various blend modes from standard creative software. By creating a shader that handles all of the blend modes math and defaulting the extended Image component with that shader, we enable the user to follow the same pipeline as the designer does, reducing implementation frictions and increases design fidelity.
   </p>
-
-  <hr>
 
   <h2>Impact</h2>
   <p>
@@ -96,8 +90,6 @@ Collaborated closely with artists and UX designers to design and develop tools t
     <li><strong>Before ➙</strong> design compromises were not uncommon when faced with dynamic blending scenarios, which reduced the designers creative freedom.</li>
     <li><strong>After ➙</strong> designers no longer needed to compromise their vision when working with dynamically blended content</li>
   </ul>
-  
-  <hr>
 
   <h2>Key Learnings</h2>
   <ul>
@@ -115,41 +107,47 @@ Collaborated closely with artists and UX designers to design and develop tools t
 </details>
 
 <details>
-  <summary><strong>Event-Driven Contrast Ratio Calculator Component</strong></summary>
+  <summary><strong>"Event-Driven Contrast Ratio Calculator Component"</strong><br>An event-driven Unity component that automatically selects the most readable text color in dynamic backgrounds by calculating contrast ratios at runtime.</summary>
   
   <blockquote>
   <h2>Responsibilities</h2>
   <ul>
-    <li>Coming soon.
+    <li>
+      Designed and developed a clean, easy to implement component that could calculate the contrast ratio between the color of a background component and 2 text colors and pick the one that was most visible.
+    </li>
+    <li>
+      Designed the component to integrate non-invasively, requiring minimal changes to existing codebases.
+    </li>
   </ul>
-
-  <hr>
 
   <h2>Challenge</h2>
   <p>
-    Coming soon.
+    Accessibility is a very important aspect of strong UX and text readability is a top concern in this. When in a scenario where text background is dynamic in nature, it can be very difficult to successfully  curate or maintain a mapping of text colors to background colors. If the scenario is dynamic enough that any color can be present, this becomes near impossible and many edge cases can lead to less accessible UI, while also leading to much larger code bases to handle all of these scenarios. 
   </p>
-
-  <hr>
 
   <h2>Solution</h2>
   <p>
-    Coming soon.
+    Create a component that can calculate the contrast ratio calculate contrast ratios in line with accessibility guidelines (WCAG) between the text background and 2 possible text colors (light and dark variants) and select the color that results in the highest contrast ratio. Since this component needs to be added to an existing code base, its implementation needs to be as non-invasive as possible so an event-driven approach is taken to reduce implementation overhead and offer implementation flexibility.
   </p>
-
-  <hr>
 
   <h2>Impact</h2>
   <p>
-    Coming soon.
+    Resulted in more consistently accessible text in dynamic color scenarios, improving user experience as a whole.
   </p>
-  
-  <hr>
+  <ul>
+    <li><strong>Before ➙</strong> certain dynamic color combinations would be unaccounted for during design which led to reduced accessibility and readability</li>
+    <li><strong>After ➙</strong> designers no longer needed to manually map text/background color combinations, reducing design time and the risk of missed accessibility issues</li>
+  </ul>
 
   <h2>Key Learnings</h2>
-  <p>
-    Coming soon.
-  </p>
+  <ul>
+    <li>
+    By automating the choice of text color to be used in a dynamic color scenario to ensure accessibility always met or surpassed web content accessibility guidelines, the resulting UI was more consistently readable across various user bases (across the color blindness spectrum). 
+    </li>
+    <li>
+      This also reduced the load on the designers who no longer needed to worry about creating various color combinations for each foreseeable situation.
+    </li>
+  </ul>
 
   </blockquote>
 </details>
