@@ -25,6 +25,10 @@ The systems below are concrete examples of this philosophy applied in production
   <summary><strong>"No-Code Data Binder System"</strong><br>A reusable MVVM-based UI binding framework that eliminated hard-coded UI logic and reduced iteration time from days to hours.</summary>
   
   <blockquote>
+  <h3>Outcome</h3> 
+    <p>
+      Enabled designers to build and modify complex data-driven UI without touching code, reducing iteration cycles from days to hours while improving stability.
+    </p>
   <h3>Responsibilities</h3>
   <ul>
     <li>Designed the code architecture for a component-based Data Binder system with a "No-code" requirement during implementation</li>
@@ -73,6 +77,10 @@ The systems below are concrete examples of this philosophy applied in production
   <summary><strong>"Image Blend Component & Shader"</strong><br>A custom Unity Image component and HLSL shader that brings standard creative-tool blend modes into UGUI, allowing designers to implement complex, dynamic image blending without visual compromises.</summary>
   
   <blockquote>
+  <h3>Outcome</h3> 
+    <p>
+      Eliminated visual compromises between design tools and runtime UI by bringing industry-standard blend modes directly into Unity’s UGUI pipeline.
+    </p>
   <h3>Responsibilities</h3>
   <ul>
     <li>Extended the Unity Image component to support a custom shader that allows for various standard image blend types found across all creative tools (darken, multiply, color burn, etc).</li>
@@ -117,6 +125,10 @@ The systems below are concrete examples of this philosophy applied in production
   <summary><strong>"Event-Driven Contrast Ratio Calculator Component"</strong><br>An event-driven Unity component that automatically selects the most readable text color in dynamic backgrounds by calculating contrast ratios at runtime.</summary>
   
   <blockquote>
+  <h3>Outcome</h3> 
+    <p>
+      Ensured consistent text readability and accessibility across dynamic color scenarios without manual color mapping or additional QA overhead.
+    </p>
   <h3>Responsibilities</h3>
   <ul>
     <li>
