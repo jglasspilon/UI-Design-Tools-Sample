@@ -1,6 +1,13 @@
 # Case Study: Design & Integration Tools
 
-Collaborated closely with artists and UX designers to design and develop tools to improve the creative and integration team's productivity and ability to match figma and photoshop designs within the engine.
+A collection of UI systems and tools designed to improve iteration speed, accessibility, and design fidelity in Unity. Built through close collaboration with artists and UX designers to reduce implementation friction and better translate Figma and Photoshop designs into runtime UI.
+
+---
+
+## Design Philosophy
+I design UI systems that prioritize scalability, accessibility, and creative autonomy. My focus is on reducing implementation friction through data-driven, non-invasive tools that allow designers to iterate freely while maintaining technical robustness, performance, and long-term maintainability.
+
+The systems below are concrete examples of this philosophy applied in production.
 
 ---
 
@@ -12,7 +19,7 @@ Collaborated closely with artists and UX designers to design and develop tools t
 
 ---
 ## Systems & Tools Breakdown
-ℹ️ _Click a system below to expand details_
+ℹ️ _Expand a system below to explore its design goals, implementation, and impact_
 
 <details>
   <summary><strong>"No-Code Data Binder System"</strong><br>A reusable MVVM-based UI binding framework that eliminated hard-coded UI logic and reduced iteration time from days to hours.</summary>
@@ -21,7 +28,7 @@ Collaborated closely with artists and UX designers to design and develop tools t
   <h3>Responsibilities</h3>
   <ul>
     <li>Designed the code architecture for a component-based Data Binder system with a "No-code" requirement during implementation</li>
-    <li>Determined and prioritized needed components with focus towards easy scaling</li>
+    <li>Determined and prioritized needed components with a focus on scalability</li>
     <li>Built modular, data-binder components for various unity UGUI components</li>
     <li>Built a single point of entry component for binding multiple data binder components to a single JSON payload requiring a single function call by the consumer upon implementation.</li>
     <li>Built a single point of entry component for generating data binder prefabs from JSON array data requiring a single function call by the consumer upon implementation.</li>
@@ -66,23 +73,23 @@ Collaborated closely with artists and UX designers to design and develop tools t
   <summary><strong>"Image Blend Component & Shader"</strong><br>A custom Unity Image component and HLSL shader that brings standard creative-tool blend modes into UGUI, allowing designers to implement complex, dynamic image blending without visual compromises.</summary>
   
   <blockquote>
-  <h2>Responsibilities</h2>
+  <h3>Responsibilities</h3>
   <ul>
     <li>Extended the Unity Image component to support a custom shader that allows for various standard image blend types found across all creative tools (darken, multiply, color burn, etc).</li>
     <li>Created a custom HLSL UI shader that supports the various image blend modes and maintains all basic image material functionality.</li>
   </ul>
 
-  <h2>Challenge</h2>
+  <h3>Challenge</h3>
   <p>
     Reproducing designs from tools like Figma or Photoshop can be limited by Unity’s lack of standard blend modes. While final blended images can sometimes be imported directly, dynamic layering often requires in‑engine work, leading to discrepancies between the original design and Unity’s output.
   </p>
 
-  <h2>Solution</h2>
+  <h3>Solution</h3>
   <p>
     Extend the already provided Unity UGUI Image component to offer one that supports the various blend modes from standard creative software. By creating a shader that handles all of the blend modes math and defaulting the extended Image component with that shader, we enable the user to follow the same pipeline as the designer does, reducing implementation frictions and increases design fidelity.
   </p>
 
-  <h2>Impact</h2>
+  <h3>Impact</h3>
   <p>
     Vastly improved the design fidelity for designs needing dynamicly blended images. 
   </p>
@@ -91,7 +98,7 @@ Collaborated closely with artists and UX designers to design and develop tools t
     <li><strong>After ➙</strong> designers no longer needed to compromise their vision when working with dynamically blended content</li>
   </ul>
 
-  <h2>Key Learnings</h2>
+  <h3>Key Learnings</h3>
   <ul>
     <li>Removing creative friction through targeted technical solutions improves both product quality and cross-disciplinary collaboration.
     </li>
@@ -110,7 +117,7 @@ Collaborated closely with artists and UX designers to design and develop tools t
   <summary><strong>"Event-Driven Contrast Ratio Calculator Component"</strong><br>An event-driven Unity component that automatically selects the most readable text color in dynamic backgrounds by calculating contrast ratios at runtime.</summary>
   
   <blockquote>
-  <h2>Responsibilities</h2>
+  <h3>Responsibilities</h3>
   <ul>
     <li>
       Designed and developed a clean, easy to implement component that could calculate the contrast ratio between the color of a background component and 2 text colors and pick the one that was most visible.
@@ -120,17 +127,17 @@ Collaborated closely with artists and UX designers to design and develop tools t
     </li>
   </ul>
 
-  <h2>Challenge</h2>
+  <h3>Challenge</h3>
   <p>
     Accessibility is a very important aspect of strong UX and text readability is a top concern in this. When in a scenario where text background is dynamic in nature, it can be very difficult to successfully  curate or maintain a mapping of text colors to background colors. If the scenario is dynamic enough that any color can be present, this becomes near impossible and many edge cases can lead to less accessible UI, while also leading to much larger code bases to handle all of these scenarios. 
   </p>
 
-  <h2>Solution</h2>
+  <h3>Solution</h3>
   <p>
-    Create a component that can calculate the contrast ratio calculate contrast ratios in line with accessibility guidelines (WCAG) between the text background and 2 possible text colors (light and dark variants) and select the color that results in the highest contrast ratio. Since this component needs to be added to an existing code base, its implementation needs to be as non-invasive as possible so an event-driven approach is taken to reduce implementation overhead and offer implementation flexibility.
+    Create a component that calculates contrast ratios in line with WCAG accessibility guidelines between a dynamic background color and two possible text colors (light and dark variants), automatically selecting the most readable option. Since this component needs to be added to an existing code base, its implementation needs to be as non-invasive as possible so an event-driven approach is taken to reduce implementation overhead and offer implementation flexibility.
   </p>
 
-  <h2>Impact</h2>
+  <h3>Impact</h3>
   <p>
     Resulted in more consistently accessible text in dynamic color scenarios, improving user experience as a whole.
   </p>
@@ -139,7 +146,7 @@ Collaborated closely with artists and UX designers to design and develop tools t
     <li><strong>After ➙</strong> designers no longer needed to manually map text/background color combinations, reducing design time and the risk of missed accessibility issues</li>
   </ul>
 
-  <h2>Key Learnings</h2>
+  <h3>Key Learnings</h3>
   <ul>
     <li>
     By automating the choice of text color to be used in a dynamic color scenario to ensure accessibility always met or surpassed web content accessibility guidelines, the resulting UI was more consistently readable across various user bases (across the color blindness spectrum). 
@@ -154,11 +161,11 @@ Collaborated closely with artists and UX designers to design and develop tools t
 
 ---
 
-## See for Yourself
-The demo is fully playable. Simply download as zip and extract (or simply clone the repo). Then run inside of Unity to explore the tools and their implementation.<br>
-> Unity engine version 6000.3.0f1
+## Try it Yourself
+The demo is fully playable. Download the project as a zip (or clone the repo) and run it in Unity to explore the tools and their implementation.
+> Unity version: 6000.3.0f1
 
-### Not a developer? Not a Problem!
+### Not a developer? No Problem!
 Simply download this build and you can see the various tools in action.<br>
 [Download Game Build](https://github.com/jglasspilon/UI-Design-Tools-Sample/raw/refs/heads/main/DesignTools-Build.zip)
 
@@ -170,7 +177,7 @@ Simply download this build and you can see the various tools in action.<br>
 
 ---
 
-# Visual Examples
+# Visual Examples (At a Glance)
 ### Data Binder Sample In-Action
 
 ---
