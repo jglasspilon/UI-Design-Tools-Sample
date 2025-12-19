@@ -26,13 +26,15 @@ public class ContrastRatioCalculator : MonoBehaviour
     private bool m_inverse, m_debug;  
 
     private MaskableGraphic m_objectToSetColor;
+    protected float m_lightContrastRatio, m_darkContrastRatio;
+    protected Vector2 m_lightLuminanceValues, m_darkLuminanceValues;
 
     private void Awake()
     {
         m_objectToSetColor = GetComponent<MaskableGraphic>();   
     }
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         if(m_invokers != null)
         {
@@ -55,7 +57,7 @@ public class ContrastRatioCalculator : MonoBehaviour
         }
     }
 
-    public void Calculate()
+    public virtual void Calculate()
     {
         if(m_backgroundObject == null)
         {
@@ -79,19 +81,19 @@ public class ContrastRatioCalculator : MonoBehaviour
 
     private void CalculateAndSetFromColor(Color test)
     {
-        float lightContrastRatio = ColorUtilities.GetContrastRatio(test, m_lightColor);
-        float darkContrastRatio = ColorUtilities.GetContrastRatio(test, m_darkColor);
+        m_lightContrastRatio = ColorUtilities.GetContrastRatio(test, m_lightColor, out m_lightLuminanceValues);
+        m_darkContrastRatio = ColorUtilities.GetContrastRatio(test, m_darkColor, out m_darkLuminanceValues);
 
         if(m_inverse)
-            SetColor(lightContrastRatio < m_acceptableThreshold ? lightContrastRatio > darkContrastRatio ? m_darkColor : m_lightColor : m_darkColor);
+            SetColor(m_lightContrastRatio < m_acceptableThreshold ? m_lightContrastRatio > m_darkContrastRatio ? m_darkColor : m_lightColor : m_darkColor);
         else
-            SetColor(lightContrastRatio < m_acceptableThreshold ? lightContrastRatio > darkContrastRatio ? m_lightColor : m_darkColor : m_lightColor);
+            SetColor(m_lightContrastRatio < m_acceptableThreshold ? m_lightContrastRatio > m_darkContrastRatio ? m_lightColor : m_darkColor : m_lightColor);
 
         if (m_debug)
-            Debug.Log($"Dark = {darkContrastRatio} - Light = {lightContrastRatio}");
+            Debug.Log($"Dark = {m_darkContrastRatio} - Light = {m_lightContrastRatio}");
 
-        if (lightContrastRatio < m_acceptableThreshold && darkContrastRatio < m_acceptableThreshold)
-            Debug.Log($"Both color options for {name} fail the accesibility test. Light color scored {lightContrastRatio}. Dark color scored {darkContrastRatio}. Consider changing the colors.");
+        if (m_lightContrastRatio < m_acceptableThreshold && m_darkContrastRatio < m_acceptableThreshold)
+            Debug.Log($"Both color options for {name} fail the accesibility test. Light color scored {m_lightContrastRatio}. Dark color scored {m_darkContrastRatio}. Consider changing the colors.");
     }
 
     private void SetColor(Color color)

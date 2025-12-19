@@ -61,13 +61,14 @@ public static class ColorUtilities
         return color;
     }
 
-    public static float GetContrastRatio(Color color1, Color color2)
+    public static float GetContrastRatio(Color color1, Color color2, out Vector2 luminance)
     {
         float lum1 = GetRelativeLuminance(color1);
         float lum2 = GetRelativeLuminance(color2);
 
         float lighter = Mathf.Max(lum1, lum2);
         float darker = Mathf.Min(lum1, lum2);
+        luminance = new Vector2(lum1, lum2);
 
         return (lighter + 0.05f) / (darker + 0.05f);
     }
