@@ -94,6 +94,7 @@ public static class Extensions
         bool HasLayoutComponent(RectTransform rt)
         {
             return rt.GetComponent<ContentSizeFitter>() ||
+                   rt.GetComponent<ClampedContentSizeFitter>() ||
                    rt.GetComponent<HorizontalLayoutGroup>() ||
                    rt.GetComponent<VerticalLayoutGroup>() ||
                    rt.GetComponent<GridLayoutGroup>() ||
