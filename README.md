@@ -19,7 +19,7 @@ The systems below are concrete examples of this philosophy applied in production
 
 ---
 ## Systems & Tools Breakdown
-ℹ️ _Expand a system below to explore its design goals, implementation, and impact_
+ℹ️ _Click on the summaries below to explore design goals, implementation, and impact_
 
 <details>
   <summary><strong>"No-Code Data Binder System"</strong><br>A reusable MVVM-based UI binding framework that eliminated hard-coded UI logic and reduced iteration time from days to hours.</summary>
@@ -179,7 +179,7 @@ The demo is fully playable. Download the project as a zip (or clone the repo) an
 
 ### Not a developer? No Problem!
 Simply download this build and you can see the various tools in action.<br>
-[Download Game Build](https://github.com/jglasspilon/UI-Design-Tools-Sample/raw/refs/heads/main/DesignTools-Build.zip)
+[Download Demo Build](https://github.com/jglasspilon/UI-Design-Tools-Sample/raw/refs/heads/main/DesignTools-Build.zip)
 
 ### Steps:
 1. Download zip
