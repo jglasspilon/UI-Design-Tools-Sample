@@ -99,7 +99,7 @@ The systems below are concrete examples of this philosophy applied in production
 
   <h3>Impact</h3>
   <p>
-    Vastly improved the design fidelity for designs needing dynamicly blended images. 
+    Vastly improved the design fidelity for designs needing dynamically blended images. 
   </p>
   <ul>
     <li><strong>Before ➙</strong> design compromises were not uncommon when faced with dynamic blending scenarios, which reduced the designers creative freedom.</li>
@@ -141,7 +141,7 @@ The systems below are concrete examples of this philosophy applied in production
 
   <h3>Challenge</h3>
   <p>
-    Accessibility is a very important aspect of strong UX and text readability is a top concern in this. When in a scenario where text background is dynamic in nature, it can be very difficult to successfully  curate or maintain a mapping of text colors to background colors. If the scenario is dynamic enough that any color can be present, this becomes near impossible and many edge cases can lead to less accessible UI, while also leading to much larger code bases to handle all of these scenarios. 
+    Accessibility is a very important aspect of strong UX and text readability is a top concern in this. When in a scenario where text background is dynamic in nature, it can be very difficult to successfully curate or maintain a mapping of text colors to background colors. If the scenario is dynamic enough that any color can be present, this becomes near impossible and many edge cases can lead to less accessible UI, while also leading to much larger code bases to handle all of these scenarios. 
   </p>
 
   <h3>Solution</h3>
