@@ -34,8 +34,8 @@ The systems below are concrete examples of this philosophy applied in production
     <li>Designed the code architecture for a component-based Data Binder system with a "No-code" requirement during implementation</li>
     <li>Determined and prioritized needed components with a focus on scalability</li>
     <li>Built modular, data-binder components for various unity UGUI components</li>
-    <li>Built a single point of entry component for binding multiple data binder components to a single JSON payload requiring a single function call by the consumer upon implementation.</li>
-    <li>Built a single point of entry component for generating data binder prefabs from JSON array data requiring a single function call by the consumer upon implementation.</li>
+    <li>Built a single point of entry component for binding multiple data binder components to a single JSON payload exposed through a single, function call.</li>
+    <li>Built a single point of entry component for generating data binder prefabs from JSON array data requiring a single function call upon implementation.</li>
   </ul>
 
   <h3>Challenge</h3>
