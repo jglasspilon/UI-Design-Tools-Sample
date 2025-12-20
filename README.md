@@ -18,7 +18,7 @@ The systems below are concrete examples of this philosophy applied in production
 ![HLSL](https://img.shields.io/badge/HLSL-007ACC?style=for-the-badge)
 
 ---
-## Systems & Tools Breakdown
+## Tools Breakdown
 ℹ️ _Click on the summaries below to explore design goals, implementation, and impact_
 
 <details>
