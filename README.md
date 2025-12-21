@@ -1,13 +1,8 @@
 # Case Study: Design & Integration Tools
 
-A collection of UI systems and tools designed to improve iteration speed, accessibility, and design fidelity in Unity. Built through close collaboration with artists and UX designers to reduce implementation friction and better translate Figma and Photoshop designs into runtime UI.
+**A collection of UI systems and tools, built through close collaboration with artists and UX designers, designed to improve iteration speed, accessibility, and design fidelity in Unity.**
 
----
-
-## Design Philosophy
-I design UI systems that prioritize scalability, accessibility, and creative autonomy. My focus is on reducing implementation friction through data-driven, non-invasive tools that allow designers to iterate freely while maintaining technical robustness, performance, and long-term maintainability.
-
-The systems below are concrete examples of this philosophy applied in production.
+Each section below summarizes a real tool used in production. Expand a summary to explore the design challenge, technical approach, and measurable impact.
 
 ---
 
@@ -19,7 +14,6 @@ The systems below are concrete examples of this philosophy applied in production
 
 ---
 ## Tools Breakdown
-ℹ️ _To explore additional details regarding design goals, implementation, and impact, click on the summaries below_
 
 <details>
   <summary><strong>"No-Code Data Binder System"</strong><br>A reusable MVVM-based UI binding framework that eliminated hard-coded UI logic and reduced iteration time from days to hours.</summary>
