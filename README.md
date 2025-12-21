@@ -19,7 +19,7 @@ The systems below are concrete examples of this philosophy applied in production
 
 ---
 ## Tools Breakdown
-ℹ️ _Click on the summaries below to explore design goals, implementation, and impact_
+ℹ️ _To explore additional details regarding design goals, implementation, and impact, click on the summaries below_
 
 <details>
   <summary><strong>"No-Code Data Binder System"</strong><br>A reusable MVVM-based UI binding framework that eliminated hard-coded UI logic and reduced iteration time from days to hours.</summary>
