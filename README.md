@@ -2,7 +2,7 @@
 
 **A collection of UI systems and tools, built through close collaboration with artists and UX designers, designed to improve iteration speed, accessibility, and design fidelity in Unity.**
 
-Each section below summarizes a real tool used in production. Expand a summary to explore the design challenge, technical approach, and measurable impact.
+Each section below summarizes a real tool used in production. Expand a summary to explore the design challenge, technical approach, and resulting impact.
 
 ---
 
