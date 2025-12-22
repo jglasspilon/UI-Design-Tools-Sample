@@ -195,13 +195,10 @@ Simply download this build and you can see the various tools in action.<br>
 > 
 > ![Data-Binders Demo](Media/DataBinders.gif)
 
----
-
 ### Blending Images Inside Unity
 > Demonstration of the blending modes support added using a custom Unity image component and HLSL shader to allow for better design fidelity in dynamically layered environments.
 > 
 > ![Data-Binders Demo](Media/ImageBlend.gif)
----
 
 ### Consistent Readable Text Regardless of Background Color
 > Demonstration of real-time contrast ratio calculation resulting in consistently accessible text.
