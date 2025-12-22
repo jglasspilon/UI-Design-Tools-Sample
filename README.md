@@ -13,10 +13,16 @@ Each section below summarizes a real tool used in production. Expand a summary t
 ![HLSL](https://img.shields.io/badge/HLSL-007ACC?style=for-the-badge)
 
 ---
+
+### Development Philosophy
+I design UI systems that prioritize scalability, accessibility, and creative autonomy. My focus is on reducing implementation friction through data-driven, non-invasive tools that allow designers to iterate freely while maintaining technical robustness, performance, and long-term maintainability.
+
+---
+
 ## Tools Breakdown
 
 <details>
-  <summary><strong>"No-Code Data Binder System"</strong><br>A reusable MVVM-based UI binding framework that eliminated hard-coded UI logic and reduced iteration time from days to hours.</summary>
+  <summary><strong>"No-Code Data Binder System"</strong><br>A reusable MVVM-based (Model-View-ViewModel) UI binding framework that eliminated hard-coded UI logic and reduced iteration time from days to hours.</summary>
   
   <blockquote>
   <h3>Outcome</h3> 
@@ -43,7 +49,7 @@ Each section below summarizes a real tool used in production. Expand a summary t
 
   <h3>Solution</h3>
   <p>
-    Use an MVVM (Model-View-ViewModel) approach with reusable components that define which JSON fields to bind to UGUI elements. These binders connect to a parent Data Binder, which supplies JSON data from the graphic class. The graphic class interacts only with the parent binder, keeping binding logic abstracted and enabling rapid, code-free modifications once implemented.
+    Use an MVVM approach with reusable components that define which JSON fields to bind to UGUI elements. These binders connect to a parent Data Binder, which supplies JSON data from the graphic class. The graphic class interacts only with the parent binder, keeping binding logic abstracted and enabling rapid, code-free modifications once implemented.
   </p>
 
   <h3>Impact</h3>
@@ -116,7 +122,7 @@ Each section below summarizes a real tool used in production. Expand a summary t
 </details>
 
 <details>
-  <summary><strong>"Event-Driven Contrast Ratio Calculator Component"</strong><br>An event-driven Unity component that automatically selects the most readable text color in dynamic backgrounds by calculating contrast ratios at runtime.</summary>
+  <summary><strong>"Event-Driven Contrast Ratio Calculator Component"</strong><br>An event-driven Unity component that automatically selects the most readable text color in dynamic backgrounds by calculating contrast ratios at runtime automating text accessibility and standardizing its approach.</summary>
   
   <blockquote>
   <h3>Outcome</h3> 
