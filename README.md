@@ -1,4 +1,4 @@
-# Case Study: Design & Integration Tools
+# Case Study: UI & Integration Tools
 
 **A collection of UI systems and tools, built through close collaboration with artists and UX designers, designed to improve iteration speed, accessibility, and design fidelity in Unity.**
 
