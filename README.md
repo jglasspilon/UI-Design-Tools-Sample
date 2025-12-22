@@ -185,13 +185,20 @@ Simply download this build and you can see the various tools in action.<br>
 
 # Visual Examples
 ### Data Binder Sample In-Action
-![Data-Binders Demo](Media/DataBinders.gif)
+> Demonstration of the data-binder system in-action binding mock finance data to various graphics components. Hovering over an element displays the data being bound to it in reat-time.
+> 
+> ![Data-Binders Demo](Media/DataBinders.gif)
+
 ---
 
 ### Blending Images Inside Unity
-![Data-Binders Demo](Media/ImageBlend.gif)
+> Demonstration of the blending modes support added using a custom Unity image component and HLSL shader to allow for better design fidelity in dynamically layered environments.
+> 
+> ![Data-Binders Demo](Media/ImageBlend.gif)
 ---
 
 ### Consistent Readable Text Regardless of Background Color
-![Data-Binders Demo](Media/ContrastRatio.gif)
+> Demonstration of real-time contrast ratio calculation resulting in consistently accessible text.
+> 
+> ![Data-Binders Demo](Media/ContrastRatio.gif)
 
